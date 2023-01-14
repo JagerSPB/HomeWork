@@ -6,10 +6,16 @@
 
 Console.Write("Введите число: ");
 int numberN = int.Parse(Console.ReadLine());
-
-int count = 0;
+int count =1;
+if (count == 1)
+{
+count = count + 1;
+}
 while (count < numberN)
 {
- Console.Write(count + ", ");
+Console.Write(count + ", ");
  count = count + 2;
 }
+if (numberN % 2 == 0)
+
+Console.WriteLine(numberN);
