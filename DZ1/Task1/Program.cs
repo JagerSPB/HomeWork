@@ -12,7 +12,7 @@ int number2 = int.Parse(Console.ReadLine());
 
 if (number1 > number2)
 {
-  Console.WriteLine(number1); 
+  Console.WriteLine("max число " + number1); 
 }
 else
- Console.WriteLine(number2);
+ Console.WriteLine("max число " + number2);
