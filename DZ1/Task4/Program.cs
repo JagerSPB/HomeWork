@@ -6,11 +6,8 @@
 
 Console.Write("Введите число: ");
 int numberN = int.Parse(Console.ReadLine());
-int count =1;
-if (count == 1)
-{
-count = count + 1;
-}
+int count =2;
+
 while (count < numberN)
 {
 Console.Write(count + ", ");
