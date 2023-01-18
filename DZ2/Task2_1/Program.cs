@@ -7,8 +7,6 @@
 Console.WriteLine("Введите число ");
 int num = int.Parse(Console.ReadLine());
 
-int numA = num / 100;
-int numC = num % 10;
-int numB = num - (((numA*100) + numC));
-int result = numB / 10;
+int result = num / 10 % 10;
+
 Console.WriteLine($"-> {result} ");

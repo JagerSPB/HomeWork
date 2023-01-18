@@ -6,11 +6,11 @@
 Console.WriteLine("Введите число ");
 int num = int.Parse(Console.ReadLine());
 
-if (num == 1 || num == 2 ||  num == 3 ||  num == 4 ||  num == 5)
+if (num == 1 || num == 2 || num == 3 || num == 4 || num == 5)
 {
   Console.WriteLine("-> да");
 }
 if (num == 6 || num == 7)
 {
-Console.WriteLine("-> нет");
+  Console.WriteLine("-> нет");
 }
