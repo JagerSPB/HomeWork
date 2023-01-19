@@ -8,7 +8,7 @@
 Console.WriteLine("Введите число ");
 int num = int.Parse(Console.ReadLine());
 
-int result = 0;
+int result = -1;
 if (num >= 100)
 {
   {
@@ -19,7 +19,7 @@ if (num >= 100)
     result = num % 10;
   }
 }
-if (result == 0)
+if (result == -1)
 {
   Console.WriteLine("третьей цифры нет");
 }
