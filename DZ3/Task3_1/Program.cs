@@ -16,14 +16,14 @@ void CheckP(int numP)
   }
 }
 
-int CheckPal(string text)
+int InputNum(string text)
 {
   Console.WriteLine(text);
   int num = int.Parse(Console.ReadLine());
   return num;
 }
 // ввод данных от пользователя
-int numP = CheckPal("введите пяти-значное число");
+int numP = InputNum("введите пяти-значное число");
 
 //вывести результат проверки на палидромность
 CheckP(numP);
