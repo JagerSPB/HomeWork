@@ -2,11 +2,11 @@
 // Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-int GetMaxMinDiff(int[] arr)
+double GetMaxMinDiff(double[] arr)
 {
-  int result = 0;
-  int max = arr[0];
-  int min = arr[0];
+  double result = 0;
+  double min = arr[0];
+  double max = arr[0];
   for (int index = 0; index < arr.Length; index++)
   {
     if (arr[index] > max)
@@ -22,20 +22,20 @@ int GetMaxMinDiff(int[] arr)
   return result;
 }
 
-int[] GetArray(int size, int start, int finish)
+double[] GetArray(int size, int start, int finish)
 {
-  int[] emptyArray = new int[size];
+  double[] emptyArray = new double[size];
   for (int index = 0; index < size; index++)
   {
-    emptyArray[index] = new Random().Next(start, finish + 1);
+   emptyArray[index] = Convert.ToDouble(new Random().Next(start, finish)) / 100;
   }
   return emptyArray;
 }
 
 // генерируем массив
-int[] array = GetArray(5, -100, 100);
+double[] array = GetArray(6, 100, 10000);
 Console.WriteLine(String.Join(", ", array));
 
 // разница максимального и минимального числа 
-int diffMaxMin = GetMaxMinDiff(array);
-Console.WriteLine($" разница максимального и минимального числа  -> {diffMaxMin} ");
+double diffMaxMin = GetMaxMinDiff(array);
+Console.WriteLine($" разница максимального и минимального числа  -> {Math.Round(diffMaxMin, 2)} ");

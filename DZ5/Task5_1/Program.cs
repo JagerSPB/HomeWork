@@ -1,37 +1,36 @@
-﻿//Напишите программу, которая принимает на вход пятизначное число и проверяет, 
-//является ли оно палиндромом.
-// 14212 -> нет
-// 12821 -> да
-// 23432 -> да
+﻿// Задача 34: Задайте массив заполненный случайными положительными трёхзначными
+// числами. Напишите программу,
+//  которая покажет количество чётных чисел в массиве.
+// [345, 897, 568, 234] -> 2
 
-void CheckP(int numPd)
+int GetCount(int[] arr)
 {
-  int[] numP = new int[5];
-
-  // for (int i = 0; i < 5; i++)
-  // {
-  //   numP[i] = numPd;
-  // }
-
-  if (numP[0] == numP[4] && numP[1] == numP[3])
+  int result = 0;
+  int count = 1;
+  for (int index = 0; index < arr.Length; index++)
   {
-    Console.WriteLine($"{numPd} - да");
+    if (arr[index] % 2 == 0)
+    {
+      result = count++;
+    }
   }
-  else
-  {
-    Console.WriteLine($"{numPd} - нет");
-  }
+  return result;
 }
 
-
-int InputNum(string text)
+int[] GetArray(int size, int start, int finish)
 {
-  Console.WriteLine(text);
-  int num = int.Parse(Console.ReadLine());
-  return num;
+  int[] emptyArray = new int[size];
+  for (int index = 0; index < size; index++)
+  {
+    emptyArray[index] = new Random().Next(start, finish + 1);
+  }
+  return emptyArray;
 }
 
-// ввод данных от пользователя
-int numPd = InputNum("введите пяти-значное число");
-//вывести результат проверки на палидромность
-CheckP(numPd);
+// генерируем массив
+int[] array = GetArray(10, 100, 1000);
+Console.WriteLine(String.Join(", ", array));
+
+// считаем сумму чётных чисел
+int countEven = GetCount(array);
+Console.WriteLine($"количество чётных чисел -> {countEven}");
