@@ -6,7 +6,7 @@
 int GetSum(int[] arr)
 {
   int result = 0;
-  for (int index = 0; index < arr.Length; index += 2)
+  for (int index = 1; index < arr.Length; index += 2)
   {
     result = result + arr[index];
   }
