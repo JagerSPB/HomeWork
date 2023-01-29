@@ -7,13 +7,13 @@ double GetMaxMinDiff(double[] arr)
   double result = 0;
   double min = arr[0];
   double max = arr[0];
-  for (int index = 0; index < arr.Length; index++)
+  for (int index = 1; index < arr.Length; index++)
   {
     if (arr[index] > max)
     {
       max = arr[index];
     }
-    if (arr[index] < min)
+    else if (arr[index] < min)
     {
       min = arr[index];
     }
