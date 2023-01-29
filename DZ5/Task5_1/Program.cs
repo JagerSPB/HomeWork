@@ -6,15 +6,15 @@
 int GetCount(int[] arr)
 {
   int result = 0;
-  int count = 1;
+  int count = 0;
   for (int index = 0; index < arr.Length; index++)
   {
     if (arr[index] % 2 == 0)
     {
-      result = count++;
+      count++;
     }
   }
-  return result;
+  return count;
 }
 
 int[] GetArray(int size, int start, int finish)
