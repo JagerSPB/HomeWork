@@ -34,8 +34,9 @@ double[] GetArray(int size, int start, int finish)
 
 // генерируем массив
 double[] array = GetArray(6, 100, 10000);
-Console.WriteLine(String.Join(", ", array));
-
+Console.Write("[");
+Console.Write(String.Join(", ", array));
+Console.WriteLine("]");
 // разница максимального и минимального числа 
 double diffMaxMin = GetMaxMinDiff(array);
 Console.WriteLine($" разница максимального и минимального числа  -> {Math.Round(diffMaxMin, 2)} ");

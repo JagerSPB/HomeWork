@@ -28,8 +28,9 @@ int[] GetArray(int size, int start, int finish)
 
 // генерируем массив
 int[] array = GetArray(10, 100, 1000);
-Console.WriteLine(String.Join(", ", array));
-
+Console.Write("[");
+Console.Write(String.Join(", ", array));
+Console.WriteLine("]");
 // считаем сумму чётных чисел
 int countEven = GetCount(array);
 Console.WriteLine($"количество чётных чисел -> {countEven}");

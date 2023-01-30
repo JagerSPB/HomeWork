@@ -25,7 +25,9 @@ int[] GetArray(int size, int start, int finish)
 
 // генерируем массив
 int[] array = GetArray(6, -100, 100);
-Console.WriteLine(String.Join(", ", array));
+Console.Write("[");
+Console.Write(String.Join(", ", array));
+Console.WriteLine("]");
 
 // считаем сумму на не чётных позициях массива
 int summ = GetSum(array);

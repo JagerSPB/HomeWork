@@ -34,7 +34,9 @@ int[] GetArray(int size, int start, int finish)
 
 // генерируем массив
 int[] array = GetArray(5, -100, 100);
-Console.WriteLine(String.Join(", ", array));
+Console.Write("[");
+Console.Write(String.Join(", ", array));
+Console.WriteLine("]");
 
 // разница максимального и минимального числа 
 int diffMaxMin = GetMaxMinDiff(array);
