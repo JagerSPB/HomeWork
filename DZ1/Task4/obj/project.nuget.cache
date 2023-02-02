@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "E5JG8TqNcdD/Yd5mZE+qbRaJ8kk+RC/a3ar0AcPeCEPt5ThMzMQcQ4TeWod4o7A04/+C3rldXKzjscKKjW4Xpw==",
+  "dgSpecHash": "Baa2s3bDWbLssQwYW8K5Ivj7CyAn3XPUDz2e2I9xaT5SnjnAdglILtRXmebn9Qyp6bz6Q9uoIMXcDUnsdjTlGQ==",
   "success": true,
   "projectFilePath": "/Users/vaysmans/Downloads/Учёба/GB/C#/DZ/DZ1/Task4/Task4.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/vaysmans/.nuget/packages/microsoft.netcore.app.ref/6.0.13/microsoft.netcore.app.ref.6.0.13.nupkg.sha512",
+    "/Users/vaysmans/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.13/microsoft.aspnetcore.app.ref.6.0.13.nupkg.sha512",
+    "/Users/vaysmans/.nuget/packages/microsoft.netcore.app.host.osx-x64/6.0.13/microsoft.netcore.app.host.osx-x64.6.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
