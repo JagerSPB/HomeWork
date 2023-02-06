@@ -22,10 +22,10 @@ void ShowAvgSumm(int[,] matrix)
   Console.Write("Среднее арифметическое каждого столбца: ");
   int rows = matrix.GetLength(0);
   int columns = matrix.GetLength(1);
-  for (int j = 0; j < rows; j++)
+  for (int j = 0; j < columns; j++)
   {
     float rowAvg = 0;
-    for (int i = 0; i < columns; i++)
+    for (int i = 0; i < rows; i++)
     {
       rowAvg += matrix[i, j];
     }
@@ -51,7 +51,7 @@ void ShowMatrix(int[,] matrix)
 }
 
 // Генерируем массив
-int[,] matrix = GenerateMatrix(4, 4, 1, 9);
+int[,] matrix = GenerateMatrix(3, 4, 1, 9);
 
 // Выводим массив
 ShowMatrix(matrix);

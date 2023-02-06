@@ -44,11 +44,11 @@ int n = GetNum("(строка)Позиция элемента 1: ");
 int m = GetNum("(Колонка)Позиция элемента 2: ");
 
 // Генерируем массив
-int[,] matrix = GenerateMatrix(4, 5, 0, 10);
+int[,] matrix = GenerateMatrix(5, 5, 0, 10);
 
 // Выводим результат
 ShowMatrix(matrix);
 
 // показываем искомый элемент по индексу в массиве
-if (m < matrix.GetLength(0) && n < matrix.GetLength(1)) Console.WriteLine($"-> {matrix[n-1, m-1]}");
+if (m <= matrix.GetLength(0) && n <= matrix.GetLength(1)) Console.WriteLine($"-> {matrix[n-1, m-1]}");
 else Console.WriteLine($"{m}{n} -> такого числа в массиве нет");
