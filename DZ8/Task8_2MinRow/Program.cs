@@ -14,7 +14,7 @@ int[,] GenerateMatrix(int rows, int columns, int lowerBound, int upperBound)
   for (int i = 0; i < rows; i++)
     for (int j = 0; j < columns; j++)
     {
-      result[i, j] = new Random().Next(lowerBound, upperBound);
+      result[i, j] = new Random().Next(lowerBound, upperBound + 1);
     }
   return result;
 }
@@ -28,7 +28,7 @@ void NumberMinRow(int[,] matrix)
   {
     minRow += matrix[0, i];
   }
-  for (int i = 0; i < matrix.GetLength(0); i++)
+  for (int i = 1; i < matrix.GetLength(0); i++)
   {
     for (int j = 0; j < matrix.GetLength(1); j++) calculateRow += matrix[i, j];
     if (calculateRow < minRow)

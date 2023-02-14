@@ -17,17 +17,6 @@ int[,] GenerateMatrix(int rows, int columns, int lowerBound, int upperBound)
   return result;
 }
 
-int[,] GenerateMatrix2(int rows, int columns, int lowerBound, int upperBound)
-{
-  int[,] result = new int[rows, columns];
-  for (int i = 0; i < rows; i++)
-    for (int j = 0; j < columns; j++)
-    {
-      result[i, j] = new Random().Next(lowerBound, upperBound);
-    }
-  return result;
-}
-
 void ShowMatrix(int[,] matrix)
 {
   Console.WriteLine();
@@ -74,7 +63,7 @@ int[,] MatrixMultiplication(int[,] matrix, int[,] matrix2)
 
 // Генерируем 2 массива
 int[,] matrix = GenerateMatrix(m, n, 1, 10);
-int[,] matrix2 = GenerateMatrix2(m, n, 1, 10);
+int[,] matrix2 = GenerateMatrix(m, n, 1, 10);
 
 // Выводим 2 массива
 ShowMatrix(matrix);
