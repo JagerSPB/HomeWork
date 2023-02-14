@@ -8,16 +8,22 @@ void RecSum(int m, int n)
   Console.WriteLine($" -> {SumMN(m - 1, n)}");
 }
 
+// int SumMN(int m, int n)
+// {
+//   int result = m;
+//   if (m >= n) return 0;
+//   else
+//   {
+//     m++;
+//     result = m + SumMN(m, n);
+//     return result;
+//   }
+// }
+
 int SumMN(int m, int n)
 {
-  int result = m;
-  if (m >= n) return 0;
-  else
-  {
-    m++;
-    result = m + SumMN(m, n);
-    return result;
-  }
+if (m >= n) return 0;
+return m + SumMN(++m, n);
 }
 
 int GetNum(string text)

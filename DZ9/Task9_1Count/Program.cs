@@ -4,12 +4,12 @@
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
 void Rec(int n)
+
 {
-  if (n == 0) return;
-  {
-    Rec(n - 1);
-    Console.Write($"{n - 1}, ");
-  }
+if (n == 0) return;
+if (n > 1) Console.Write($"{n}, ");
+else  Console.Write($"{n}.");
+Rec(n - 1);
 }
 
 int GetNum(string text)
@@ -24,4 +24,4 @@ int GetNum(string text)
 int num = GetNum("Введите число: ");
 Console.Write("-> ");
 Rec(num);
-Console.WriteLine($"{num}");
+Console.WriteLine();
